@@ -8,7 +8,8 @@ const BoxVerticalContainer=() =>{
        <View style={{
         backgroundColor: "white",
         width: "20%",
-        height: 200,
+        height: 300,
+        alignItems: "center",
         justifyContent: "space-evenly",
         flexDirection: "column",
         // /paddingTop: 20

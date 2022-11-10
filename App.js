@@ -9,10 +9,9 @@ export default function App() {
     <View style={styles.container}>
 
       <View style={{
-        flexDirection: "row",
         justifyContent: "space-evenly",
-        alignContent: "center",
-        flex: 2,
+        alignItems: "center",
+        flex: 1,
         borderBottomWidth: 2,
         borderBottomColor: "white"
 
@@ -20,18 +19,22 @@ export default function App() {
         <BoxContainer/>
       </View>
       
-      <View >
-        <BoxVerticalContainer/>
-        <BoxVerticalContainer/>
+      <View style={{
+          flexDirection: "row",
+          flex: 2,
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          borderBottomWidth: 2,
+          borderBottomColor: "white"
+}}>
+        <BoxVerticalContainer />
+        <BoxVerticalContainer />
       </View>
 
      <View style={{
-        flexDirection: "row",
-        justifyContent: "space-evenly",
-        alignContent: "center",
-        flex: 2,
-        borderBottomWidth: 2,
-        borderBottomColor: "white"
+        justifyContent: "center",
+        alignItems: "center",
+        flex: 1,
 
       }}>
         <BoxContainer/>
@@ -45,17 +48,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // flexDirection: "row",
     backgroundColor: '#000',
     marginTop: 60,
-    alignItems: 'center',
     justifyContent: 'space-evenly',
-  },
-
-  name: {
-    fontSize: 12,
-    fontWeight: "500", 
-    color: "white"
-  },
- 
+  }, 
 });
