@@ -12,6 +12,8 @@ const MainStackNavigator = () =>{
     
     const {isDark} = useContext(MainContext);
 
+    const {todo, addTodo} = useContext([]);
+
     return (
         <Stack.Navigator >
             <Stack.Screen 
